@@ -1,6 +1,6 @@
 {
   "name": "quipu-math",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mathematics of Incan knotted cord (quipu) data structures for JavaScript/TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,10 +19,19 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SuperInstance/quipu-math-npm.git"
+    "url": "git+https://github.com/SuperInstance/quipu-math-npm.git"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
     "typescript": "^5.9.3"
-  }
+  },
+  "homepage": "https://github.com/SuperInstance/quipu-math-npm#readme",
+  "bugs": {
+    "url": "https://github.com/SuperInstance/quipu-math-npm/issues"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
 }
