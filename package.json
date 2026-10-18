@@ -1,13 +1,14 @@
 {
   "name": "quipu-math",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Mathematics of Incan knotted cord (quipu) data structures for JavaScript/TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "node --test dist/test/*.test.js",
-    "prepublishOnly": "npm run build"
+    "guard": "node guard/check-publishable.mjs .",
+    "test": "tsc -p tsconfig.test.json && node --test .test-dist/test/*.test.js",
+    "prepublishOnly": "npm run build && npm run guard"
   },
   "keywords": [
     "quipu",
@@ -30,7 +31,7 @@
     "url": "https://github.com/SuperInstance/quipu-math-npm/issues"
   },
   "files": [
-    "src",
+    "dist",
     "README.md",
     "LICENSE"
   ]
